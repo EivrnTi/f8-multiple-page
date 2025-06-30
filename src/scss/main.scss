@@ -1,0 +1,79 @@
+@use "./reset";
+
+
+//Component
+@use "./components/hero";
+
+// Layout
+@use "./layouts/header";
+@use "./layouts/grid";
+@use "./layouts/footer";
+
+
+// Pages
+@use "./pages/course";
+@use "./pages/contact";
+@use "./pages/shop";
+
+// Common
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700|Source+Sans+Pro:300,400,600,700");
+:root {
+  --font-heading: "PT Sans", sans-serif;
+  --font-secondary: "Source Sans Pro", sans-serif;
+  --color-primary: #b80257;
+  --color-secondary: #783df0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  line-height: 1.42857143;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  color: inherit;
+}
+
+input,
+textarea,
+button,
+select {
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: all ease 0.3s;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: rgba(0, 0, 0, 0.8);
+}
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}

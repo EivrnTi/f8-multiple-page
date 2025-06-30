@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+
+  <body>
+    <div class="wrapper shop-page">
+      <!-- Top  Page-->
+      <div class="top-page">
+        <!-- Header -->
+        <%- include("./partials/header.ejs") %>
+
+        <!-- hero -->
+        <div class="hero">
+          <div class="container">
+            <div class="inner">
+              <div class="main-title">
+                <h1>Shop</h1>
+                <ul class="breadcrumbs">
+                  <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">Pages</a>
+                  </li>
+                  <li>
+                    <span>Shop</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- Main Title -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <main class="main-content">
+        <div class="container">
+          <div class="inner">
+            <div class="row shop-row-content">
+              <!-- Sidebar -->
+              <div class="col-md-6 col-lg-4 col-xl-3">
+                <aside class="sidebar sidebar-product">
+                  <form action="" class="form-search-product">
+                    <input type="text" placeholder="Search Product" />
+                    <button>Search</button>
+                  </form>
+
+                  <div class="shop-categories">
+                    <h3 class="title-list">Shop Categories :</h3>
+                    <ul>
+                      <li><a href="#">SMM Shop</a></li>
+                      <li><a href="#">Network Security</a></li>
+                      <li><a href="#">Programming</a></li>
+                      <li><a href="#">Search Engine Opt</a></li>
+                      <li><a href="#">Social Media</a></li>
+                      <li><a href="#">Technology</a></li>
+                      <li><a href="#">User Experience</a></li>
+                      <li><a href="#">Website Analytics</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="popular-product">
+                    <h3 class="title-list">Popular Product</h3>
+                    <ul class="popular-product__list">
+                      <li class="popular-product__item">
+                        <div class="popular-product__item-img">
+                          <img
+                            src="./assets/img/shops/sidebar-items-1.jpg"
+                            alt="Analysis & data"
+                          />
+                        </div>
+                        <div class="popular-product__item-content">
+                          <h4 class="popular-product__item-title">
+                            <a href="#">Analysis & data</a>
+                          </h4>
+                          <p class="popular-product__item-price">$ 235</p>
+                        </div>
+                      </li>
+                      <li class="popular-product__item">
+                        <div class="popular-product__item-img">
+                          <img
+                            src="./assets/img/shops/sidebar-items-2.jpg"
+                            alt="Software Dev..."
+                          />
+                        </div>
+                        <div class="popular-product__item-content">
+                          <h4 class="popular-product__item-title">
+                            <a href="#">Software Dev...</a>
+                          </h4>
+                          <p class="popular-product__item-price">$ 35</p>
+                        </div>
+                      </li>
+                      <li class="popular-product__item">
+                        <div class="popular-product__item-img">
+                          <img
+                            src="./assets/img/shops/sidebar-items-3.jpg"
+                            alt="Marketing Plan"
+                          />
+                        </div>
+                        <div class="popular-product__item-content">
+                          <h4 class="popular-product__item-title">
+                            <a href="#">Marketing Plan</a>
+                          </h4>
+                          <p class="popular-product__item-price">$ 75</p>
+                        </div>
+                      </li>
+                      <li class="popular-product__item">
+                        <div class="popular-product__item-img">
+                          <img
+                            src="./assets/img/shops/sidebar-items-4.jpg"
+                            alt="Google Expands"
+                          />
+                        </div>
+                        <div class="popular-product__item-content">
+                          <h4 class="popular-product__item-title">
+                            <a href="#">Google Expands</a>
+                          </h4>
+                          <p class="popular-product__item-price">$ 234</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </aside>
+              </div>
+              <!-- Content -->
+              <div class="col-lg-8 col-xl-9">
+                <div class="content">
+                  <!-- Filter -->
+                  <div class="filter-product">
+                    <div class="filter-product_select">
+                      <input type="checkbox" hidden id="show-filter" />
+                      <label for="show-filter">
+                        <div class="filter-product_btn">
+                          Select Filter
+                          <i class="fa fa-chevron-down"></i>
+                        </div>
+                      </label>
+                      <ul class="filter-product_option">
+                        <li class="active"><a href="#">Select Filter</a></li>
+                        <li><a href="#">By Price</a></li>
+                        <li><a href="#">By Category</a></li>
+                        <li><a href="#">By Date</a></li>
+                      </ul>
+                    </div>
+                    <div class="filter-product__result-text">
+                      Showing 1-9 of 25 Result
+                    </div>
+                  </div>
+
+                  <!-- Product List -->
+                  <div class="product-list">
+                    <div class="row product-list__row">
+                      <div class="col-xl-4 col-sm-6 col-12">
+                        <div class="product-item">
+                          <a href="#" class="product-item__img">
+                            <img
+                              src="./assets/img/shops/shop-items-1.jpg"
+                              alt="Ten steps to making"
+                            />
+                          </a>
+
+                          <div class="product-item__content">
+                            <h4 class="product-item__title">
+                              <a href="#">Ten steps to making</a>
+                            </h4>
+                            <div class="product-item__price">
+                              <span>$ 89</span>
+                            </div>
+                            <div class="product-item__cart">
+                              <a href="#">ADD TO CART </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-4 col-sm-6 col-12">
+                        <div class="product-item">
+                          <a href="#!" class="product-item__img">
+                            <img
+                              src="./assets/img/shops/shop-items-2.jpg"
+                              alt="Long-Tail SEO Strategy"
+                            />
+                          </a>
+
+                          <div class="product-item__content">
+                            <h4 class="product-item__title">
+                              <a href="#!">Long-Tail SEO Strategy</a>
+                            </h4>
+                            <div class="product-item__price">
+                              <span>$ 19</span>
+                            </div>
+                            <div class="product-item__cart">
+                              <a href="#!">ADD TO CART </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-4 col-sm-6 col-12">
+                        <div class="product-item">
+                          <a href="#!" class="product-item__img">
+                            <img
+                              src="./assets/img/shops/shop-items-3.jpg"
+                              alt="Create optimized content"
+                            />
+                          </a>
+
+                          <div class="product-item__content">
+                            <h4 class="product-item__title">
+                              <a href="#!">Create optimized content</a>
+                            </h4>
+                            <div class="product-item__price">
+                              <span>$ 79</span>
+                            </div>
+                            <div class="product-item__cart">
+                              <a href="#!">ADD TO CART </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-4 col-sm-6 col-12">
+                        <div class="product-item">
+                          <a href="#!" class="product-item__img">
+                            <img
+                              src="./assets/img/shops/shop-items-4.jpg"
+                              alt="Boost Your Organic"
+                            />
+                          </a>
+
+                          <div class="product-item__content">
+                            <h4 class="product-item__title">
+                              <a href="#!">Boost Your Organic</a>
+                            </h4>
+                            <div class="product-item__price">
+                              <span>$ 9</span>
+                            </div>
+                            <div class="product-item__cart">
+                              <a href="#!">ADD TO CART </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-4 col-sm-6 col-12">
+                        <div class="product-item">
+                          <a href="#!" class="product-item__img">
+                            <img
+                              src="./assets/img/shops/shop-items-5.jpg"
+                              alt="Search Rankings"
+                            />
+                          </a>
+
+                          <div class="product-item__content">
+                            <h4 class="product-item__title">
+                              <a href="#!">Search Rankings</a>
+                            </h4>
+                            <div class="product-item__price">
+                              <span>$ 47</span>
+                            </div>
+                            <div class="product-item__cart">
+                              <a href="#!">ADD TO CART </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-4 col-sm-6 col-12">
+                        <div class="product-item">
+                          <a href="#!" class="product-item__img">
+                            <img
+                              src="./assets/img/shops/shop-items-6.jpg"
+                              alt="School PPC"
+                            />
+                          </a>
+
+                          <div class="product-item__content">
+                            <h4 class="product-item__title">
+                              <a href="#!">School PPC</a>
+                            </h4>
+                            <div class="product-item__price">
+                              <span>$ 36</span>
+                            </div>
+                            <div class="product-item__cart">
+                              <a href="#!">ADD TO CART </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-4 col-sm-6 col-12">
+                        <div class="product-item">
+                          <a href="#!" class="product-item__img">
+                            <img
+                              src="./assets/img/shops/shop-items-7.jpg"
+                              alt="Guide to SEO"
+                            />
+                          </a>
+
+                          <div class="product-item__content">
+                            <h4 class="product-item__title">
+                              <a href="#!">Guide to SEO</a>
+                            </h4>
+                            <div class="product-item__price">
+                              <span>$ 19</span>
+                            </div>
+                            <div class="product-item__cart">
+                              <a href="#!">ADD TO CART </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-4 col-sm-6 col-12">
+                        <div class="product-item">
+                          <a href="#!" class="product-item__img">
+                            <img
+                              src="./assets/img/shops/shop-items-8.jpg"
+                              alt="Influencer Marketing"
+                            />
+                          </a>
+
+                          <div class="product-item__content">
+                            <h4 class="product-item__title">
+                              <a href="#!">Influencer Marketing</a>
+                            </h4>
+                            <div class="product-item__price">
+                              <span>$ 90</span>
+                            </div>
+                            <div class="product-item__cart">
+                              <a href="#!">ADD TO CART </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-4 col-sm-6 col-12">
+                        <div class="product-item">
+                          <a href="#!" class="product-item__img">
+                            <img
+                              src="./assets/img/shops/shop-items-9.jpg"
+                              alt="PPC Agency"
+                            />
+                          </a>
+
+                          <div class="product-item__content">
+                            <h4 class="product-item__title">
+                              <a href="#!">PPC Agency</a>
+                            </h4>
+                            <div class="product-item__price">
+                              <span>$ 78</span>
+                            </div>
+                            <div class="product-item__cart">
+                              <a href="#">ADD TO CART </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Navigation -->
+                  <ul class="navigation-product">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li>
+                      <a href="#" class="next">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <%- include("./partials/footer.ejs") %>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

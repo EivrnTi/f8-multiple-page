@@ -1,0 +1,46 @@
+.top-page .hero {
+  height: 100%;
+  color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24rem 0 19rem 0;
+}
+
+
+/* Main Title */
+.main-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  font-family: var(--font-heading);
+}
+
+.main-title h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 3.52rem;
+  color: #fff;
+}
+
+.main-title .breadcrumbs {
+  display: flex;
+}
+.main-title .breadcrumbs li {
+  display: flex;
+}
+.main-title .breadcrumbs li + li::before {
+  content: "/";
+  padding: 0 0.5rem;
+}
+.main-title .breadcrumbs a,
+.main-title .breadcrumbs li {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.main-title .breadcrumbs a:hover {
+  color: var(--color-secondary);
+}
