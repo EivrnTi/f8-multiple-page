@@ -3,6 +3,7 @@ import { ViteEjsPlugin } from "vite-plugin-ejs";
 import path from "path";
 
 export default defineConfig({
+  base: "/f8-multiple-page",
   root: "src",
   publicDir: "../public",
   build: {
