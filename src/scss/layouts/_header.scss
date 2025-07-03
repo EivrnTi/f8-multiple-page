@@ -185,7 +185,7 @@ label[for="navbar-toggle"] {
     justify-content: space-between;
   }
   .header .navbar > li > .item-link > a {
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border: 0.5px solid rgba(255, 255, 255, 0.15);
     line-height: 4.5rem;
     font-weight: normal;
     padding: 0 0 0 1.5rem;
@@ -199,12 +199,11 @@ label[for="navbar-toggle"] {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     width: 6rem;
     color: #fff;
     cursor: pointer;
-    border-left: 1px solid;
-    border-bottom: 1px solid;
-    border-color: rgba(255, 255, 255, 0.15);
+    border: 0.5px solid rgba(255, 255, 255, 0.15);
     font-size: 1.8rem;
   }
 
